@@ -44,7 +44,7 @@ fdisk -l и lsblk -o NAME,SIZE,FSTYPE,TYPE,MOUNTPOINT
 1. Происходит отказ второго ssd. После этого проверяем состояние RAID и дисков
 ![Image alt](https://github.com/lizalisa/OS/blob/master/laba2/screenshots/20.png)
 ![Image alt](https://github.com/lizalisa/OS/blob/master/laba2/screenshots/21.png)
-2. Создаём новый диск. Копируем на него таблицу разделов. Перемонтируем /boot и устанавливаем grub. Можно посмотреть информацию о дисках
+2. Создаём новый диск. Копируем на него таблицу разделов. Перемонтируем /boot и устанавливаем grub. Можно посмотреть информацию о дисках.  
 ![Image alt](https://github.com/lizalisa/OS/blob/master/laba2/screenshots/22.png)
 3. Необходимо создать новый RAID-массив, при этом включая в него только один ssd, используя команду - mdadm --create --verbose /dev/md63 --force --level=1 --raid-devices=1 /dev/sdb2
 ![Image alt](https://github.com/lizalisa/OS/blob/master/laba2/screenshots/23.png)
