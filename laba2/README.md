@@ -38,5 +38,5 @@ fdisk -l и lsblk -o NAME,SIZE,FSTYPE,TYPE,MOUNTPOINT
 4. Используя команду sfdisk -d /dev/sda | sfdisk /dev/sdb, копируем таблицу разделов на новый диск. Используя команду mdadm --manage /dev/md0 --add /dev/sdb2, добавляем RAID в sbd2
 ![Image alt](https://github.com/lizalisa/OS/blob/master/laba2/screenshots/17.png)
 ![Image alt](https://github.com/lizalisa/OS/blob/master/laba2/screenshots/18.png)
-5. Копируем /boot и устанавливаем grub. После того, как сделаем это, перезапускаем виртуальную машину. Диск восстановлен
+5. Копируем /boot и устанавливаем grub. После того, как сделаем это, перезапускаем виртуальную машину. Диск восстановлен.  
 ![Image alt](https://github.com/lizalisa/OS/blob/master/laba2/screenshots/19.png)
