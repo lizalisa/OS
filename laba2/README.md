@@ -53,7 +53,7 @@ fdisk -l и lsblk -o NAME,SIZE,FSTYPE,TYPE,MOUNTPOINT
 5. Используя команду vgextend system /dev/md63, увеличиваем Volume Group. Переносим данные на новый диск. Используя команду
 vgreduce system /dev/md0, удаляем из Volume Group RAID из старого диска.
 ![Image alt](https://github.com/lizalisa/OS/blob/master/laba2/screenshots/25.png)
-6. Необходимо удалить ssd3 и создать ssd5, hdd1, hdd2. Теперь нужно скопировать таблицу разделов на новый ssd, а также скопировать /boot и установить grub. Используя команду fdisk /dev/xxx, нужно изменить размер второго раздела (ssd5)
+6. Необходимо удалить ssd3 и создать ssd5, hdd1, hdd2. Теперь нужно скопировать таблицу разделов на новый ssd, а также скопировать /boot и установить grub. Используя команду fdisk /dev/xxx, нужно изменить размер второго раздела (ssd5).  
 ![Image alt](https://github.com/lizalisa/OS/blob/master/laba2/screenshots/26.png)
 7. Теперь нужно добавить ssd5 в RAID-массив, а также увеличить размеры раздела на обоих дисках
 ![Image alt](https://github.com/lizalisa/OS/blob/master/laba2/screenshots/27.png)
@@ -62,7 +62,7 @@ vgreduce system /dev/md0, удаляем из Volume Group RAID из старо�
 ![Image alt](https://github.com/lizalisa/OS/blob/master/laba2/screenshots/29.png)
 9. Нужно создать логический том на hdd и отформатировать под ext4
 ![Image alt](https://github.com/lizalisa/OS/blob/master/laba2/screenshots/30.png)
-10. Необходимо перемонтировать var, log
+10. Необходимо перемонтировать var, log.  
 ![Image alt](https://github.com/lizalisa/OS/blob/master/laba2/screenshots/31.png)
 11. Теперь нужно изменить fstab
 ![Image alt](https://github.com/lizalisa/OS/blob/master/laba2/screenshots/32.png)
